@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --padding: 10px;
+  --margin: 10px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces", serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--Cream);
+}
+
+main {
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container .image {
+  width: 100%;
+  height: 100%;
+}
+
+.container .image img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+.content .header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #bdbaba;
+}
+.content .tilte {
+  font-family: "Fraunces", serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--Dark-grayish-blue);
+}
+.content .paragraph {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #bdbaba;
+}
+.content .price {
+  color: var(--Dark-cyan);
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Fraunces", serif;
+  margin-bottom: 10px;
+}
+.content .price span {
+  color: #bdbaba;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: line-through;
+  font-size: 11px;
+}
+.content .btn button {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--Dark-cyan);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: white;
+}
+.content .btn button span {
+  margin-right: 12px;
+}
